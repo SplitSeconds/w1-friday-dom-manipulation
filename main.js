@@ -34,4 +34,8 @@ $link.setAttribute('target', 'blank')
 var $button = document.getElementById('add-animal')
 $button.onclick = function() {
   console.log("You clicked on the button!!")
+  var $li = document.createElement('li')
+  $li.innerText = "Andrew the Antilope"
+  document.querySelector('ul').appendChild($li)
+  $li.style.color = "pink"
 }
